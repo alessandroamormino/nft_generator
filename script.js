@@ -19,6 +19,26 @@ window.onload = function() {
         buildrobot();
     }
 
+    //nose
+    var robotnose = new Image();
+    var robotnosenum = Math.floor(Math.random() * 6) + 1; // 6 num of images i have, change for more heads
+    var robotnosename = "nose" + robotnosenum + ".png";
+    robotnose.src = robotnosename;
+
+    robotnose.onload = function() {
+        buildrobot();
+    }
+
+    //mouth
+    var robotmouth = new Image();
+    var robotmouthnum = Math.floor(Math.random() * 2) + 1; // 6 num of images i have, change for more heads
+    var robotmouthname = "mouth" + robotmouthnum + ".png";
+    robotmouth.src = robotmouthname;
+
+    robotmouth.onload = function() {
+        buildrobot();
+    }
+
     function buildrobot() {
         //create a canvas for drawing the image
         let canvas = document.getElementById('canvas');
@@ -30,6 +50,10 @@ window.onload = function() {
         ctx.drawImage(robothead, ((500 - robothead.width) / 2), 50);
         //draw eyes
         ctx.drawImage(roboteye, ((500 - roboteye.width) / 2), 25);
+        //draw nose
+        ctx.drawImage(robotnose, ((500 - robotnose.width) / 2), 150);
+        //draw mouth
+        ctx.drawImage(robotmouth, ((500 - robotmouth.width) / 2), 325);
 
     }
 }
