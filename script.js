@@ -1,7 +1,7 @@
 window.onload = function() {
     //heads
     var robothead = new Image();
-    var robotheadnum = Math.floor(Math.random() * 6) + 1; // 3 num of images i have, change for more heads
+    var robotheadnum = Math.floor(Math.random() * 6) + 1; // 6 num of images i have, change for more heads
     var robotheadname = "head" + robotheadnum + ".png";
     robothead.src = robotheadname;
 
