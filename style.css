@@ -1,0 +1,7 @@
+.container {
+    text-align: center;
+}
+
+#canvas {
+    border: 5px solid black;
+}
