@@ -2,7 +2,7 @@ window.onload = function() {
     //heads
     var robothead = new Image();
     var robotheadnum = Math.floor(Math.random() * 6) + 1; // 6 num of images i have, change for more heads
-    var robotheadname = "head" + robotheadnum + ".png";
+    var robotheadname = "./images/head" + robotheadnum + ".png";
     robothead.src = robotheadname;
 
     robothead.onload = function() {
@@ -12,7 +12,7 @@ window.onload = function() {
     //eyes
     var roboteye = new Image();
     var roboteyenum = Math.floor(Math.random() * 2) + 1; // 2 num of images i have, change for more heads
-    var roboteyename = "eye" + roboteyenum + ".png";
+    var roboteyename = "./images/eye" + roboteyenum + ".png";
     roboteye.src = roboteyename;
 
     roboteye.onload = function() {
@@ -22,7 +22,7 @@ window.onload = function() {
     //nose
     var robotnose = new Image();
     var robotnosenum = Math.floor(Math.random() * 6) + 1; // 6 num of images i have, change for more heads
-    var robotnosename = "nose" + robotnosenum + ".png";
+    var robotnosename = "./images/nose" + robotnosenum + ".png";
     robotnose.src = robotnosename;
 
     robotnose.onload = function() {
@@ -32,7 +32,7 @@ window.onload = function() {
     //mouth
     var robotmouth = new Image();
     var robotmouthnum = Math.floor(Math.random() * 2) + 1; // 6 num of images i have, change for more heads
-    var robotmouthname = "mouth" + robotmouthnum + ".png";
+    var robotmouthname = "./images/mouth" + robotmouthnum + ".png";
     robotmouth.src = robotmouthname;
 
     robotmouth.onload = function() {
